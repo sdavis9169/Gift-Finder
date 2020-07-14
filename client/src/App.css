@@ -8,4 +8,14 @@
   background-color: #417dd1;
   padding: 1.5rem;
   color: whitesmoke;
+  display: flex;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style-type: none;
+  color: whitesmoke;
 }

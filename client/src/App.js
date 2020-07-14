@@ -5,19 +5,23 @@ import About from './components/pages/About';
 import Navbar from './components/layout/Navbar';
 import './App.css';
 
+import GiftState from './context/gift/GiftState';
+
 function App() {
   return (
-    <Router>
-      <Fragment>
-        <Navbar />
-        <div>
-          <Switch>
-            <Route exact path='/' component={Home} />
-            <Route exact path='/about' component={About} />
-          </Switch>
-        </div>
-      </Fragment>
-    </Router>
+    <GiftState>
+      <Router>
+        <Fragment>
+          <Navbar />
+          <div>
+            <Switch>
+              <Route exact path='/' component={Home} />
+              <Route exact path='/about' component={About} />
+            </Switch>
+          </div>
+        </Fragment>
+      </Router>
+    </GiftState>
   );
 }
 
